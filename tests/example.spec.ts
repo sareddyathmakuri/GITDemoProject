@@ -1,6 +1,12 @@
 import { test, expect } from '@playwright/test';
 
-test('has title', async ({ page }) => {
+test('has title', async ({ browser }) => {
+  const page = await browser.newPage();
+    await page.setViewportSize(
+    {
+      width: 1920,
+      height: 1080,
+    });
   await page.goto('https://playwright.dev/');
 
   // Expect a title "to contain" a substring.
