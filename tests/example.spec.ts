@@ -1,6 +1,5 @@
 import { test, expect } from '@playwright/test';
-
-test('has title', async ({ browser }) => {
+test('has title',{tag: ['@PlaywrightWithJenkins']}, async ({ browser }) => {
   const page = await browser.newPage();
     await page.setViewportSize(
     {
@@ -13,7 +12,7 @@ test('has title', async ({ browser }) => {
   await expect(page).toHaveTitle(/Playwright/);
 });
 
-test('get started link', async ({ page }) => {
+test('get started link',{tag: ['@PlaywrightWithJenkins','@critical']}, async ({ page }) => {
   await page.goto('https://playwright.dev/');
 
   // Click the get started link.
