@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","30126","PIM-MouseoverTest","chromium","2026-11-18","broken","2026-11-18","","AfterEach.spec.ts","",""
+"","1296","get started link","chromium","2026-11-18","passed","2026-11-18","","example.spec.ts","",""
+"","580","Get Products @regression @smoke","chromium","2026-11-18","passed","2026-11-18","","API_GET.spec.ts","",""
+"","30178","User can navigate to the dashboard","chromium","2026-11-18","broken","2026-11-18","","AfterEach.spec.ts","",""
+"","30140","LanguageSkills-MouseOverTest @smoke","chromium","2026-11-18","broken","2026-11-18","","AfterEach.spec.ts","",""
+"","1286","has title","chromium","2026-11-18","passed","2026-11-18","","example.spec.ts","",""

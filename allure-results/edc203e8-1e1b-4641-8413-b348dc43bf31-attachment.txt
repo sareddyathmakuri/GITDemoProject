@@ -1,0 +1,6 @@
+Application Opened
+Username and Password entered
+Finished User can navigate to the dashboard with status timedOut
+After Each Completed
+User can navigate to the dashboard
+Did not run as expected, ended up at https://ctcorphyd.com/SureshIT/login.php
