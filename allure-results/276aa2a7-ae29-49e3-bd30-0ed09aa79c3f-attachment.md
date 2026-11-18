@@ -1,0 +1,28 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: CheckCPUCores.spec.ts >> CPU Cores Check
+- Location: tests\CheckCPUCores.spec.ts:3:1
+
+# Error details
+
+```
+TypeError: require(...).CPU is not a function
+```
+
+# Test source
+
+```ts
+  1 | import { test } from '@playwright/test';
+  2 | import * as os from 'os';
+  3 | test('CPU Cores Check', async ({page}) => 
+  4 | {
+> 5 |  console.log(require('os').CPU().Cores());
+    |                            ^ TypeError: require(...).CPU is not a function
+  6 | });
+```
