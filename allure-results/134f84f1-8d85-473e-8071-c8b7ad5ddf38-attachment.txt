@@ -1,0 +1,7 @@
+Application Opened
+Username and Password entered
+Login completed
+Finished PIM-MouseoverTest with status failed
+After Each Completed
+PIM-MouseoverTest
+Did not run as expected, ended up at https://ctcorphyd.com/SureshIT/index.php
