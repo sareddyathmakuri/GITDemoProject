@@ -5,7 +5,7 @@ test.beforeEach('Global', async ({ page }) =>
 {
  // 1. Navigate to the base application URL
  let url : string = "https://ctcorphyd.com/SureshIT/login.php";
- await page.goto(url);
+ await page.goto(url,{ timeout: 30_000 });
  console.log("Application Opened");
  // 2. Perform common prerequisite actions (e.g., Logging in)
  let username : string = "sureshit";
