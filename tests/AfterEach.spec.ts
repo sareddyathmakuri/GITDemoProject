@@ -18,7 +18,7 @@ test.beforeEach('Global', async ({ page }) =>
  await page.locator("//input[@name='Submit']").click();
  await page.waitForTimeout(3000);
  console.log("Login completed");
- await page.screenshot({ path: 'C:\\Users\\Lahari\\Desktop\\Playwright_Practice\\full-page.png', fullPage: true });
+ await page.screenshot({ path: 'screenshots/homepage.png', fullPage: true });
 });
 
 //This hook runs AFTER every single test in the file
