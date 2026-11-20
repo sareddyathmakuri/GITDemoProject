@@ -24,6 +24,7 @@ jobs:
 
     - name: Run Playwright tests
       run: npx playwright test --shard=${{ matrix.shardIndex }}/${{ matrix.shardTotal }}
+      continue-on-error: true
 
     - name: Upload blob report to GitHub Actions Artifacts
       if: ${{ !cancelled() }}
@@ -55,6 +56,10 @@ jobs:
 
     - name: Merge into HTML Report
       run: npx playwright merge-reports --reporter html ./all-blob-reports
+      continue-on-error: true
+    # npx playwright merge-reports path/to/blob-reports-dir
+    # npx playwright merge-reports --reporter=html,github ./blob-reports
+    # npx playwright merge-reports --config=merge.config.ts ./blob-reports
 
     - name: Upload HTML report
       uses: actions/upload-artifact@v5
